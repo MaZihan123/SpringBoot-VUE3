@@ -15,6 +15,7 @@
 终端输入：'''vue ui'''
 常见问题1：Windows上运行vue，提示无法加载文件，表示用户权限不足。
 解决方案：用管理员身份打开终端，输入'''set-ExecutionPolicy RemoteSigned'''，然后输入'''y'''
+提交
 
 
 
