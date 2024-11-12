@@ -15,7 +15,13 @@
 终端输入：'''vue ui'''
 常见问题1：Windows上运行vue，提示无法加载文件，表示用户权限不足。
 解决方案：用管理员身份打开终端，输入'''set-ExecutionPolicy RemoteSigned'''，然后输入'''y'''
-提交
+
+vue内部插件安装：vuex和前面的router都安装，直接进界面安装
+项目依赖要安装一个jquery 我选择的是3.7.1版本，还有bootstrap，我选择的是5.3.3
+
+ac_app和web都是在VUE中创建的项目，所以都需要安装依赖，同上。
+
+
 
 
 
