@@ -1,7 +1,7 @@
 # 一、配置git环境
 安装Git Bash（使用Mac和Linux可以跳过这一步）：https://gitforwindows.org/
 # 二、后端用IDEA、前端用VsCode
-踩坑避雷：如果用的是jdk8，那么springboot的版本要小于3
+踩坑避雷：jdk用8，springboot的版本要小于3
 # 三、关于VUE的安装
 ## 1.VUE官网：https://vuejs.org/
 
