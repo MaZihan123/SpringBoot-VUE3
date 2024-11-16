@@ -25,6 +25,33 @@ ac_app和web都是在VUE中创建的项目，所以都需要安装依赖，同�
 #前端开发中
 可参考MDN官方文档：https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/a 
 可参考Bootstrap官方文档：https://getbootstrap.com/docs/5.3/components/navbar/ 
+关于VUE目录结构：
+├── mock                       # 项目mock 模拟数据
+├── public                     # 静态资源
+│   │── favicon.ico            # favicon图标
+├── src                        # 源代码
+│   ├── api                    # 所有请求
+│   ├── assets                 # 主题 字体等静态资源
+│   ├── components             # 全局公用组件
+│   ├── directive              # 全局指令
+│   ├── filters                # 全局 filter
+│   ├── icons                  # 项目所有 svg icons
+│   ├── lang                   # 国际化 language
+│   ├── layout                 # 全局 layout
+│   ├── router                 # 路由
+│   ├── store                  # 全局 store管理
+│   ├── styles                 # 全局样式
+│   ├── utils                  # 全局公用方法
+│   ├── vendor                 # 公用vendor
+│   ├── views                  # views 所有页面
+│   ├── App.vue                # 入口页面
+│   ├── main.ts                # 入口文件 加载组件 初始化等
+│   └── permission.ts          # 权限管理
+├── .env.xxx                   # 环境变量配置
+├── .eslintrc.cjs              # eslint 配置项
+├── index.html                 # html模板
+├── vite.config.ts             # vite 配置
+└── package.json               # package.json
 
 
 
