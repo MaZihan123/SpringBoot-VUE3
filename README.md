@@ -22,10 +22,11 @@ vue内部插件安装：vuex和前面的router都安装，直接进界面安装
 
 ac_app和web都是在VUE中创建的项目，所以都需要安装依赖，同上。
 
-#前端开发中
+## 前端开发中
 可参考MDN官方文档：https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/a 
 可参考Bootstrap官方文档：https://getbootstrap.com/docs/5.3/components/navbar/ 
-关于VUE目录结构：
+
+## 关于VUE目录结构：
 ```
 ├── mock                       # 项目mock 模拟数据
 ├── public                     # 静态资源
@@ -54,6 +55,36 @@ ac_app和web都是在VUE中创建的项目，所以都需要安装依赖，同�
 ├── vite.config.ts             # vite 配置
 └── package.json               # package.json
 ```
+# 四、关于后端的安装
+## 1.安装IDEA 
+在新建项目的时候，组：com.kob 工件backend，jdk：corretto-1.8，java:8
+选择maven
+
+依赖：web中选择spring web，在Template Engines中选择thymeleaf
+
+
+# 五、关于数据库
+## 1.安装MySQL
+### 1.1下载地址 
+        windows： https://dev.mysql.com/downloads/windows/installer/8.0.html
+        mac我个人推荐homebrew安装，具体先下一个homebrew，然后brew install mysql
+### 1.2安装
+    windows：Choosing a Setup Type选择Custom 
+    然后选择MySQL Server ->MySQL Server ->MySQL Server 8.0->MySQL Server 8.0.xxx具体版本看自己安装的
+    然后都选择默认即可
+    mac的简单不用说了
+### 1.3配置环境变量
+    windows：将`C:\Program Files\MySQL\MySQL Server 8.0\bin`（如果安装到了其他目录，填写相应目录的地址即可）
+    添加到环境变量PATH中，这样就可以在任意目录的终端中执行`mysql`命令了。
+### 1.4操作
+    连接用户名：root 密码：123321
+    创建数据库：```create database kob; ```   咱们项目是科比 我就用了kob
+    使用数据库：```use kob;```
+    创建表：```create table user(phone_number varchar(15),user_name varchar(100),password varchar(100));```
+#### 我的后续想法是根据手机号和密码进行登陆，所以表中字段就这三个，后续可以根据需求添加。
+
+
+
 
 
 
