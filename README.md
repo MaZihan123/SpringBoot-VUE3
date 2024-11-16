@@ -26,6 +26,7 @@ ac_app和web都是在VUE中创建的项目，所以都需要安装依赖，同�
 可参考MDN官方文档：https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/a 
 可参考Bootstrap官方文档：https://getbootstrap.com/docs/5.3/components/navbar/ 
 关于VUE目录结构：
+```
 ├── mock                       # 项目mock 模拟数据
 ├── public                     # 静态资源
 │   │── favicon.ico            # favicon图标
@@ -52,6 +53,7 @@ ac_app和web都是在VUE中创建的项目，所以都需要安装依赖，同�
 ├── index.html                 # html模板
 ├── vite.config.ts             # vite 配置
 └── package.json               # package.json
+```
 
 
 
