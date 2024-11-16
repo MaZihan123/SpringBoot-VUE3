@@ -78,9 +78,14 @@ windows：将 `C:\Program Files\MySQL\MySQL Server 8.0\bin`（如果安装到了
 添加到环境变量PATH中，这样就可以在任意目录的终端中执行`mysql`命令了。
 ### 1.4操作
 连接用户名：root 密码：123321
-创建数据库：``` create database kob; ```   咱们项目是科比 我就用了kob
-使用数据库：``` use kob; ```
-创建表：``` create table user(phone_number varchar(15),user_name varchar(100),password varchar(100)); ```
+创建数据库：
+``` create database kob; ```   
+咱们项目是科比 我就用了kob
+
+使用数据库：
+``` use kob; ```
+创建表：
+``` create table user(phone_number varchar(15),user_name varchar(100),password varchar(100)); ```
 #### 我的后续想法是根据手机号和密码进行登陆，所以表中字段就这三个，后续可以根据需求添加。
 
 
