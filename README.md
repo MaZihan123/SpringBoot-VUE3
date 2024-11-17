@@ -79,15 +79,22 @@ windows：将 `C:\Program Files\MySQL\MySQL Server 8.0\bin`（如果安装到了
 ### 1.4操作
 连接用户名：root 密码：123321
 创建数据库：
-``` create database kob; ```   
+        ```create database kob; ```
 咱们项目是科比 我就用了kob
 
 使用数据库：
-``` use kob; ```
+        ```use kob; ```
 创建表：
-``` create table user(phone_number varchar(15),user_name varchar(100),password varchar(100)); ```
+        ```create table user(phone_number varchar(15),user_name varchar(100),password varchar(100)); ```
 #### 我的后续想法是根据手机号和密码进行登陆，所以表中字段就这三个，后续可以根据需求添加。
 
+# 六、SpringBoot
+## 1.
+` SpringBoot `中的常用模块：
+·` pojo `层：将数据库中的表对应成Java中的Class（table直接翻译成class）
+·` mapper `层（也叫Dao层）：将pojo层的class中的操作，映射成sql语句（将class⬆️中的crud操作转化成sql语句）
+·` service `层：写具体的业务逻辑，组合使用mapper中的操作（用到多个mapper操作，实现业务）
+·` controller` 层：负责请求转发，接受页面过来的参数，传给Service处理，接到返回值，再传给页面（调度service）
 
 
 
