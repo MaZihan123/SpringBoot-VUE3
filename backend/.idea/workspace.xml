@@ -4,60 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3c8e596a-9bf3-4719-821d-f5a8d4185168" name="更改" comment="">
+    <list default="true" id="5de2440e-1117-47b0-a5f3-54b229033aff" name="更改" comment="">
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HELP.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/acapp/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/acapp/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/acapp/babel.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/acapp/jsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/acapp/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/acapp/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/acapp/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/acapp/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/acapp/src/App.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/acapp/src/assets/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/acapp/src/components/HelloWorld.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/acapp/src/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/acapp/src/store/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/acapp/vue.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kob/backend/BackendApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kob/backend/config/CorsConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kob/backend/controller/pk/BotInfoController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kob/backend/controller/pk/IndexController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kob/backend/demos/web/BasicController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kob/backend/demos/web/PathVariableController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kob/backend/demos/web/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/image/pic1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/readMe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/pk/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/babel.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/jsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/App.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/assets/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/components/HelloWorld.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/router/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/store/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/views/AboutView.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/views/HomeView.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/vue.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kob/Main.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../web/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../web/src/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../web/src/assets/background.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../web/src/assets/logo.png" beforeDir="false" />
@@ -84,22 +36,41 @@
     "accountId": "2737744e-5c7e-4e28-9ce1-4e727507c132"
   }
 }]]></component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="$USER_HOME$/Downloads/apache-maven-3.9.8/mvnlib" />
+        <option name="userSettingsFile" value="$USER_HOME$/Downloads/apache-maven-3.9.8/conf/settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
   "associatedIndex": 3
 }]]></component>
-  <component name="ProjectId" id="2ovdDJXSBALdmaWzW650pDIwPHK" />
+  <component name="ProjectId" id="2oyF8b3nKmSBmDKI2uWdJ6CEQ5U" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.BackendApplication.executor": "Run",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "/Users/mazihan/IdeaProjects/kob/backend/src/main/java/com/kob/Main.java",
+    "settings.editor.selected.configurable": "MavenSettings",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="SharedIndexes">
@@ -113,27 +84,20 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
-      <changelist id="3c8e596a-9bf3-4719-821d-f5a8d4185168" name="更改" comment="" />
-      <created>1731753863300</created>
+      <changelist id="5de2440e-1117-47b0-a5f3-54b229033aff" name="更改" comment="" />
+      <created>1731833749907</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1731753863300</updated>
-      <workItem from="1731753864221" duration="56000" />
+      <updated>1731833749907</updated>
+      <workItem from="1731833751533" duration="296000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/kob/Main.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
