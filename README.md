@@ -90,11 +90,11 @@ windows：将 `C:\Program Files\MySQL\MySQL Server 8.0\bin`（如果安装到了
 
 # 六、SpringBoot
 ## 1.
-` SpringBoot `中的常用模块：
-·` pojo `层：将数据库中的表对应成Java中的Class（table直接翻译成class）
-·` mapper `层（也叫Dao层）：将pojo层的class中的操作，映射成sql语句（将class⬆️中的crud操作转化成sql语句）
-·` service `层：写具体的业务逻辑，组合使用mapper中的操作（用到多个mapper操作，实现业务）
-·` controller` 层：负责请求转发，接受页面过来的参数，传给Service处理，接到返回值，再传给页面（调度service）
+- ` SpringBoot `中的常用模块：
+- ·` pojo `层：将数据库中的表对应成Java中的Class（table直接翻译成class）
+- ·` mapper `层（也叫Dao层）：将pojo层的class中的操作，映射成sql语句（将class⬆️中的crud操作转化成sql语句）
+- ·` service `层：写具体的业务逻辑，组合使用mapper中的操作（用到多个mapper操作，实现业务）
+- ·` controller` 层：负责请求转发，接受页面过来的参数，传给Service处理，接到返回值，再传给页面（调度service）
 
 
 
