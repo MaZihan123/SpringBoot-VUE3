@@ -5,11 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5de2440e-1117-47b0-a5f3-54b229033aff" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kob/backend/config/CorsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kob/backend/controller/user/userController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kob/backend/pojo/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kob/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kob/BackendApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kob/backend/BackendApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kob/demos/web/BasicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kob/backend/demos/web/BasicController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kob/demos/web/PathVariableController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kob/backend/demos/web/PathVariableController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kob/demos/web/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kob/backend/demos/web/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../web/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../web/src/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../web/src/assets/background.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../web/src/assets/logo.png" beforeDir="false" />
@@ -20,6 +26,13 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -49,8 +62,10 @@
   "associatedIndex": 3
 }]]></component>
   <component name="ProjectId" id="2oyF8b3nKmSBmDKI2uWdJ6CEQ5U" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
@@ -63,6 +78,10 @@
     "Spring Boot.BackendApplication.executor": "Run",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "MavenSettings",
     "vue.rearranger.settings.migration": "true"
@@ -89,7 +108,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1731833749907</updated>
-      <workItem from="1731833751533" duration="296000" />
+      <workItem from="1731833751533" duration="3562000" />
     </task>
     <servers />
   </component>
