@@ -4,18 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5de2440e-1117-47b0-a5f3-54b229033aff" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kob/backend/config/CorsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kob/backend/controller/user/userController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kob/backend/pojo/User.java" afterDir="false" />
+    <list default="true" id="15599c14-9232-43b1-9df5-2fccca0675b1" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kob/backend/contorller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kob/backend/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kob/backend/BackendApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kob/BackendApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kob/backend/BackendApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kob/demos/web/BasicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kob/backend/demos/web/BasicController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kob/demos/web/PathVariableController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kob/backend/demos/web/PathVariableController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kob/demos/web/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kob/backend/demos/web/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kob/backend/controller/user/userController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kob/backend/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kob/backend/pojo/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/kob/BackendApplicationTests.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../web/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../web/src/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../web/src/assets/background.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../web/src/assets/logo.png" beforeDir="false" />
@@ -49,33 +49,17 @@
     "accountId": "2737744e-5c7e-4e28-9ce1-4e727507c132"
   }
 }]]></component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="localRepository" value="$USER_HOME$/Downloads/apache-maven-3.9.8/mvnlib" />
-        <option name="userSettingsFile" value="$USER_HOME$/Downloads/apache-maven-3.9.8/conf/settings.xml" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "customColor": "",
   "associatedIndex": 3
 }]]></component>
-  <component name="ProjectId" id="2oyF8b3nKmSBmDKI2uWdJ6CEQ5U" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="2oym52Q35gXRZq60n5JnQmVUA8y" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.BackendApplication.executor": "Run",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
@@ -83,7 +67,6 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "MavenSettings",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -103,20 +86,16 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
-      <changelist id="5de2440e-1117-47b0-a5f3-54b229033aff" name="更改" comment="" />
-      <created>1731833749907</created>
+      <changelist id="15599c14-9232-43b1-9df5-2fccca0675b1" name="更改" comment="" />
+      <created>1731850003129</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1731833749907</updated>
-      <workItem from="1731833751533" duration="3562000" />
+      <updated>1731850003129</updated>
+      <workItem from="1731850004430" duration="3453000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
   </component>
 </project>
