@@ -1,17 +1,18 @@
-# 一、配置git环境
+# 基础环境配置
+## 一、配置git环境
 安装Git Bash（使用Mac和Linux可以跳过这一步）：https://gitforwindows.org/
-# 二、后端用IDEA、前端用VsCode
+## 二、后端用IDEA、前端用VsCode
 踩坑避雷：jdk用8，springboot的版本要小于3
-# 三、关于VUE的安装
-## 1.VUE官网：https://vuejs.org/
+## 三、关于VUE的安装
+### 1.VUE官网：https://vuejs.org/
 
-## 2.安装Nodejs——安装地址：https://nodejs.org/en/
+### 2.安装Nodejs——安装地址：https://nodejs.org/en/
 
-## 3.安装@vue/cli
+### 3.安装@vue/cli
 打开Git Bash，执行： `npm i -g @vue/cli `
 ****如果执行后面的操作有bug，可能是最新版有问题，可以尝试安装早期版本，比如：`npm i -g @vue/cli@4`
 
-## 4.启动vue自带的图形化项目管理界面
+### 4.启动vue自带的图形化项目管理界面
 终端输入：`vue ui`(不行的话前面加上`sudo`试一下）
 常见问题1：Windows上运行vue，提示无法加载文件，表示用户权限不足。
 解决方案：用管理员身份打开终端，输入`set-ExecutionPolicy RemoteSigned`，然后输入`y`
@@ -22,11 +23,11 @@ vue内部插件安装：vuex和前面的router都安装，直接进界面安装
 
 ac_app和web都是在VUE中创建的项目，所以都需要安装依赖，同上。
 
-## 前端开发中
+### 前端开发中
 可参考MDN官方文档：https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/a 
 可参考Bootstrap官方文档：https://getbootstrap.com/docs/5.3/components/navbar/ 
 
-## 关于VUE目录结构：
+### 关于VUE目录结构：
 ```
 ├── mock                       # 项目mock 模拟数据
 ├── public                     # 静态资源
@@ -55,28 +56,28 @@ ac_app和web都是在VUE中创建的项目，所以都需要安装依赖，同�
 ├── vite.config.ts             # vite 配置
 └── package.json               # package.json
 ```
-# 四、关于后端的安装
-## 1.安装IDEA 
+## 四、关于后端的安装
+### 1.安装IDEA 
 在新建项目的时候，组：com.kob 工件backend，jdk：corretto-1.8，java:8
 选择maven
 
 依赖：web中选择spring web，在Template Engines中选择thymeleaf
 
 
-# 五、关于数据库
-## 1.安装MySQL
-### 1.1下载地址 
+## 五、关于数据库
+### 1.安装MySQL
+#### 1.1下载地址 
 windows：https://dev.mysql.com/downloads/windows/installer/8.0.html  
 mac我个人推荐homebrew安装，具体先下一个homebrew，然后brew install mysql
-### 1.2安装
+#### 1.2安装
 windows：Choosing a Setup Type选择Custom 
 然后选择MySQL Server ->MySQL Server ->MySQL Server 8.0->MySQL Server 8.0.xxx具体版本看自己安装的
 然后都选择默认即可
 mac的简单不用说了
-### 1.3配置环境变量
+#### 1.3配置环境变量
 windows：将 `C:\Program Files\MySQL\MySQL Server 8.0\bin`（如果安装到了其他目录，填写相应目录的地址即可）
 添加到环境变量PATH中，这样就可以在任意目录的终端中执行`mysql`命令了。
-### 1.4操作
+#### 1.4操作
 连接用户名：root 密码：123321
 创建数据库：
         ```create database kob; ```
@@ -85,17 +86,22 @@ windows：将 `C:\Program Files\MySQL\MySQL Server 8.0\bin`（如果安装到了
 使用数据库：
         ```use kob; ```
 创建表：
-        ```create table user(phone_number varchar(15),user_name varchar(100),password varchar(100)); ```
-#### 我的后续想法是根据手机号和密码进行登陆，所以表中字段就这三个，后续可以根据需求添加。
+        ```create table user(id varchar(10) primary key,phone_number varchar(15),user_name varchar(100),password varchar(100),email varchar(10000)); ```
+##### 数据库中user有id、电话、用户名、密码、email
 
 # 六、SpringBoot
 ## 1.
 - ` SpringBoot `中的常用模块：
 - ·` pojo `层：将数据库中的表对应成Java中的Class（table直接翻译成class）
+##一个表对应一个pojo 对应一个mapper
 - ·` mapper `层（也叫Dao层）：将pojo层的class中的操作，映射成sql语句（将class⬆️中的crud操作转化成sql语句）
 - ·` service `层：写具体的业务逻辑，组合使用mapper中的操作（用到多个mapper操作，实现业务）
 - ·` controller` 层：负责请求转发，接受页面过来的参数，传给Service处理，接到返回值，再传给页面（调度service）
 
+## 2.关于MyBatis-Plus
+官方网站： https://baomidou.com/  
+
+写API 1.controller 调用service中的接口  2.在service中写接口 3.service->impl中写接口的具体实现
 
 
 
@@ -104,4 +110,5 @@ windows：将 `C:\Program Files\MySQL\MySQL Server 8.0\bin`（如果安装到了
 
 
 
-
+#测试数据库中密码：
+马梓涵——123321

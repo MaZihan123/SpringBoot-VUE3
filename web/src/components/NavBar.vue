@@ -1,22 +1,22 @@
 <!--这里是导航栏的组件们-->
 <template>
-<nav class="navbar navbar-expand-lg navbar-light"><!--lg格式小折叠，大展开-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark"><!--lg格式小折叠，大展开-->
   <div class="container-fluid"> <!--自适应宽度100%-->
     <router-link class="navbar-brand" :to="{name:'home'}">重生之我在内大学JAVA</router-link>
     
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0"> 
         <li class="nav-item">
           <!--<a class="nav-link" aria-current="page" href="/homepage/">首页</a>-->
-          <router-link class="nav-link" :to="{name:'home_index'}" >首页</router-link>
+          <router-link :class="route_name =='home_index' ? 'nav-link activate' : 'nav-link' " :to="{name:'home_index'}" >首页</router-link>
         </li>
         <li class="nav-item">
           <!--<a class="nav-link" href="/store/">购买</a>  会刷新，换成vue的组件-->
-          <router-link class="nav-link" :to="{name:'store_index'}">购买</router-link>
+          <router-link :class="route_name =='sotre_index' ? 'nav-link activate' : 'nav-link'  " :to="{name:'store_index'}">购买</router-link>
         </li>
         <li class="nav-item">
             <!--<a class="nav-link" href="/order/">订单</a>-->
-            <router-link class="nav-link" :to="{name:'order_index'}">订单</router-link>
+            <router-link :class="route_name =='order_index' ? 'nav-link activate'  : 'nav-link' " :to="{name:'order_index'}">订单</router-link>
         </li>
       </ul>
 
@@ -44,6 +44,20 @@
 </template>
 
 <script>
+//界面高亮，先取得页面 vue-router中获取uesRoute的API
+
+import  {useRoute} from 'vue-router'
+//实时计算
+import { computed } from 'vue'
+export default{
+  setup()
+  {
+    const route =useRoute()
+    //computed函数返回route的name
+    let route_name = computed(()=>route.name)
+    return {route_name}
+  }
+}
 
 </script>
 

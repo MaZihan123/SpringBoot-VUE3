@@ -1,7 +1,12 @@
 <template>
     <ContentField>
         商城首页
+        <p>
+            <img src="../../assets/images/kobe.png" alt="kobe·bryant">
+        </p>
+        
     </ContentField>
+
 
 </template>
 
