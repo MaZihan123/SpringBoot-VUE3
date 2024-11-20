@@ -18,7 +18,7 @@ import java.util.Map;
 public class InfoServiceImpl implements InfoService
 {
     @Override
-    public Map<String ,String> getInfo(String token)
+    public Map<String ,String> getinfo()
     {
         //getcontext()方法返回一个SecurityContext对象，该对象保存了SecurityContext
         //getAuthentication()方法返回一个Authentication对象，保存了当前用户的信息
@@ -27,7 +27,7 @@ public class InfoServiceImpl implements InfoService
 
         UserDetailsImpl loginUser=(UserDetailsImpl) authenticationToken.getPrincipal();
         User user=loginUser.getUser();
-
+//user 填充info
         Map<String ,String>map=new HashMap<>();
         map.put("error_message","success");
         map.put("id",user.getId().toString());

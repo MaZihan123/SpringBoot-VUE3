@@ -4,6 +4,6 @@ import java.util.Map;
 
 public interface RegisterService
 {
-    Map<String ,String > register(String username, String password, String confirmPassword, String email, String phone_number);
+    Map<String ,String > register(String user_name, String password, String confirmPassword, String email, String phone_number);
 
 }

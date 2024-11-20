@@ -38,11 +38,11 @@ public class LoginServiceImpl implements LoginService
 
         //封装成jwt token
         String jwt= JwtUtil.createJWT(user.getId().toString());
-        Map<String,String >map=new HashMap<>();
+        Map<String,String> map=new HashMap<>();
         map.put("error_message","success");
 
         map.put("token",jwt);
 
-        return Collections.singletonMap("message","login success");
+        return map;
     }
 }

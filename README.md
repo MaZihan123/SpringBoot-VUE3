@@ -88,10 +88,12 @@ windows：将 `C:\Program Files\MySQL\MySQL Server 8.0\bin`（如果安装到了
 创建表：
         ```create table user(id varchar(10) primary key,phone_number varchar(15),user_name varchar(100),password varchar(100),email varchar(10000)); ```
 ##### 数据库中user有id、电话、用户名、密码、email
+##### 测试数据库中密码：
+- 马梓涵——123321
+- 科比布莱恩特-123456
 
 # 六、SpringBoot
-## 1.
-- ` SpringBoot `中的常用模块：
+## 1.` SpringBoot `中的常用模块：
 - ·` pojo `层：将数据库中的表对应成Java中的Class（table直接翻译成class）
 ##一个表对应一个pojo 对应一个mapper
 - ·` mapper `层（也叫Dao层）：将pojo层的class中的操作，映射成sql语句（将class⬆️中的crud操作转化成sql语句）
@@ -106,9 +108,3 @@ windows：将 `C:\Program Files\MySQL\MySQL Server 8.0\bin`（如果安装到了
 
 
 
-
-
-
-
-#测试数据库中密码：
-马梓涵——123321

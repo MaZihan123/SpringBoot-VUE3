@@ -30,6 +30,7 @@ export default
           success(resp)
           {
             console.log(resp);
+            
           },
           error(resp)
           {
@@ -37,6 +38,26 @@ export default
           }
         }
       )
+
+        //test2
+        // $.ajax(
+        // {
+        //   url:"http://127.0.0.1:3000/user/account/info/",
+        //   type:"get",
+        //   data:
+        //   header:{
+        //     "Authorization":"Bearer "+localStorage.getItem("token")
+        //   },
+        //   success(resp)
+        //   {
+        //     console.log(resp);
+        //   },
+        //   error(resp)
+        //   {
+        //     console.log(resp);
+        //   }
+        // }
+
   }
 }
 

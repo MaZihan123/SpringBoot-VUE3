@@ -1,9 +1,13 @@
 <template>
     <ContentField>
-        商城首页
+        <center>
+            商城首页
+        </center>
+        
         <p>
             <img src="../../assets/images/kobe.png" alt="kobe·bryant">
         </p>
+        我是科比
         
     </ContentField>
 
