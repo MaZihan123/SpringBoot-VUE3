@@ -103,8 +103,13 @@ windows：将 `C:\Program Files\MySQL\MySQL Server 8.0\bin`（如果安装到了
 ## 2.关于MyBatis-Plus
 官方网站： https://baomidou.com/  
 
+
+调试：404找不到页面 403:
 写API 1.controller 调用service中的接口  2.在service中写接口 3.service->impl中写接口的具体实现
 
 
+
+
+token:"eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI3NzE3ZDhmYzljNWE0YjJmODM1ZWUxODdiNTQ0MWIwYyIsInN1YiI6IjEiLCJpc3MiOiJzZyIsImlhdCI6MTczMjA5ODQ3MywiZXhwIjoxNzMzMzA4MDczfQ.oyl5aTeCRlaj8XfFE2zab4MTk4xieBSrKc9pifzHQ80"
 
 
