@@ -5,14 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="15599c14-9232-43b1-9df5-2fccca0675b1" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kob/backend/contorller/user/account/RegisterController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kob/backend/service/impl/user/account/RegisterServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kob/backend/contorller/user/account/InfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kob/backend/contorller/user/account/InfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kob/backend/contorller/user/account/InfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kob/backend/contorller/user/account/InfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kob/backend/contorller/user/account/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kob/backend/contorller/user/account/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/kob/backend/service/impl/user/account/InfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kob/backend/service/impl/user/account/InfoServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/kob/backend/service/impl/user/account/LoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kob/backend/service/impl/user/account/LoginServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kob/backend/service/user/account/InfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kob/backend/service/user/account/InfoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kob/backend/service/user/account/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kob/backend/service/user/account/LoginService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kob/backend/service/user/account/RegisterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kob/backend/service/user/account/RegisterService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../web/src/App.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +71,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.语言默认设置&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -120,6 +122,8 @@
       <workItem from="1731850004430" duration="4324000" />
       <workItem from="1731939084348" duration="27644000" />
       <workItem from="1732068858685" duration="5077000" />
+      <workItem from="1732097656053" duration="14892000" />
+      <workItem from="1732166168005" duration="3842000" />
     </task>
     <servers />
   </component>
@@ -135,5 +139,9 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

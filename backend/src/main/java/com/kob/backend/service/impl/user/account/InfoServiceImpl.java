@@ -13,7 +13,7 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import java.util.HashMap;
 import java.util.Map;
 
-//根据token来获取一个用户信息
+//根据token来获取用户信息
 @Service
 public class InfoServiceImpl implements InfoService
 {
