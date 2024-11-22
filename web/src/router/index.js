@@ -7,6 +7,9 @@ import NotFound from '../views/error/NotFound.vue'
 import OrderIndex from '../views/order/OrderIndex.vue'
 import ShoppingMall from '../views/shoppingMall/ShoppingMall.vue'
 import User from '../views/user/UserIndex.vue'
+import UserAccountLoginView from '../views/user/account/UserAccountLoginView.vue'
+import UserAccountRegisterView from '../views/user/account/UserAccountRegisterView.vue'
+
 
 const routes = [
   {
@@ -40,6 +43,22 @@ const routes = [
     name: "user_index",
     component: User//用户组件
   },
+  {
+    path:"/user/myself",
+    name:"user_myself",
+  },
+  {
+    path:"/user/account/login",
+    name:"user_account_login",
+    component:UserAccountLoginView,
+  },
+  {
+    path:"/user/account/register",
+    name:"user_account_register",
+    component:UserAccountRegisterView,
+  }
+
+  ,
   {
     path:"/:catchAll(.*)",
     redirect: "/404"

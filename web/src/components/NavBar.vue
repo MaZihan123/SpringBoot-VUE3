@@ -21,18 +21,43 @@
       </ul>
 
       <ul class="navbar-nav">
+        <!-- 分类讨论一下，没有登陆的时候显示的是 登陆+注册 
+                            登陆的话，显示的是 人名+退出 
+                根据is_login的状态来判断                    
+        -->
+        <ul class="navbar-nav" v-if="$store.state.user.is_login">
+
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            马梓涵
+            {{ $store.state.user.user_name }}
           </a>
           <ul class="dropdown-menu">
-            <li><routerlink class="dropdown-item" :to="{name:'user_index'}">用户信息</routerlink></li>
+            <li>
+              <routerlink class="dropdown-item" :to="{name:'user_index'}">用户信息</routerlink>
+            </li>
 
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">退出</a></li>
           </ul>
-        </li>
-        
+        </li> 
+      </ul>
+      <!---->
+      <ul class="navbar-nav" v-else>
+        <li class="nav-item ">
+          <router-link class="nav-link ":to="{name:'user_account_login'}" href="#" role="button">
+            登陆
+          </router-link>
+        </li> 
+
+        <li class="nav-item">
+          <a class="nav-link " href="#" role="button">
+            注册
+          </a>
+        </li>  
+
+      </ul>
+      <!---->
+
       </ul>
 
       <span class="nav-item">
