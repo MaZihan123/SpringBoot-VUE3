@@ -7,7 +7,7 @@ import $ from "jquery";
 //actions是异步操作，可以调用mutations来修改state
 
 export default {
-    state: {
+    state:{
         id: "",
         user_name: "",
         photo: "",
@@ -25,6 +25,13 @@ export default {
         },
         updateUserToken(state, token) {
             state.token = token;
+        },
+        logout(state) {
+            state.id = "";
+            state.user_name = "";
+            state.photo = "";
+            state.token = "";
+            state.is_login = false;
         }
     },
     actions: {//修改state
@@ -79,6 +86,9 @@ export default {
             });
 
 
+        },
+        logout(context) {
+            context.commit("logout");
         }
     },
     modules: {

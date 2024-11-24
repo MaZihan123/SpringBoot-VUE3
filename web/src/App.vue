@@ -90,9 +90,9 @@ export default
 </script>
 
 <!--scoped加入之后，样式只在当前组件生效，不会影响到其他组件。 -->
-<style scoped>
+<style >
 body{
-  background-image:url(@/assets/images/background.png);
+  background-image:url(@/assets/images/bridgeBackGround.jpg);
   background-size:cover;
 }
 </style>
