@@ -31,8 +31,8 @@ public class InfoServiceImpl implements InfoService
         Map<String ,String>map=new HashMap<>();
         map.put("error_message","success");
         map.put("id",user.getId().toString());
-        map.put("username",user.getUser_name());
-        map.put("phone_number",user.getPhone_number());
+        map.put("username",user.getUsername());
+        map.put("phone",user.getPhone());
         map.put("email",user.getEmail());
         return map;
     }

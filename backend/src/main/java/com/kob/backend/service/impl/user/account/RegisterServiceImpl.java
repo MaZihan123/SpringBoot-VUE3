@@ -22,63 +22,50 @@ public class RegisterServiceImpl implements RegisterService
     private PasswordEncoder passwordEncoder;
 
     @Override
-    public Map<String, String> register(String user_name, String password, String confirm_password, String email, String phone_number)
+    public Map<String, String> register(String username, String password, String confirmPassword, String email, String phone)
     {
         Map<String,String> map=new HashMap<>();
-        if(user_name==null)
-        {
-            map.put("error_message","用户名不能为空");
+        if (username == null) {
+            map.put("error_message", "用户名不能为空1");
             return map;
         }
-        if(password==null||confirm_password==null)
-        {
-            map.put("error_message","密码不能为空哦");
-            return map;
-        }
-        if(email==null)
-        {
-            map.put("error_message","邮箱不能为空");
+        if (password == null || confirmPassword == null) {
+            System.out.println("this is password:"+password+",this is confirm_password:"+confirmPassword);
+            map.put("error_message", "密码不能为空2");
             return map;
         }
 
-        if(phone_number==null)
-        {
-            map.put("error_message","电话号不能为空");
+        username = username.trim();
+        if (username.length() == 0) {
+            map.put("error_message", "用户名不能为空3");
             return map;
         }
 
-        //删除首位空白字符
-        user_name=user_name.trim();
-
-//        password=password.trim();
-//        confirmPassword=confirmPassword.trim();
-
-        if(user_name.length()==0)
-        {
-            map.put("error_message","用户名不能为空");
+        if (password.length() == 0 || confirmPassword.length() == 0) {
+            map.put("error_message", "密码不能为空4");
             return map;
         }
 
-        if(user_name.length()>15)
-        {
-            map.put("error_message","用户名过于长");
+        if (username.length() > 100) {
+            map.put("error_message", "用户名长度不能大于100  5");
+            return map;
         }
-        if(password.length()>100||confirm_password.length()>100)
-        {
-            map.put("error_message","密码长度过于长");
+
+        if (password.length() > 100 || confirmPassword.length() > 100) {
+            map.put("error_message", "密码长度不能大于100   6");
+            return map;
         }
-        if(password.length()==0||confirm_password.length()==0)
-        {
-            map.put("error_message","密码长度为零");
+
+        if (!password.equals(confirmPassword)) {
+            map.put("error_message", "两次输入的密码不一致   7");
+            return map;
         }
-        if(password.equals(confirm_password))
-        {
-            map.put("error_message","两次密码输入不一样");
-        }
+
+
 
         //注册时遇见相同用户名
         QueryWrapper<User> queryWrapper=new QueryWrapper<>();
-        queryWrapper.eq("user_name",user_name);
+        queryWrapper.eq("username",username);
         List<User> users=userMapper.selectList(queryWrapper);
         if(!users.isEmpty())
         {
@@ -89,7 +76,7 @@ public class RegisterServiceImpl implements RegisterService
         String encodedPassword=passwordEncoder.encode(password);
         String photo = "https://gw.alicdn.com/imgextra/i1/2216844425045/O1CN01qMdADZ1n8f7WSVCjQ_!!2216844425045.jpg_Q75.jpg_.webp";
 
-        User user=new User(null,phone_number,user_name,password,email,photo);
+        User user=new User(null,phone,username,password,email,photo);
 
         userMapper.insert(user);
 

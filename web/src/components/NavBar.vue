@@ -28,7 +28,7 @@
         <ul class="navbar-nav" v-if="$store.state.user.is_login">
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              {{ $store.state.user.user_name }}
+             {{ $store.state.user.username }}
             </a>
             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
               <li>
@@ -44,7 +44,7 @@
           </li>
         </ul>
 
-        <ul class="navbar-nav" v-else>
+        <ul class="navbar-nav" v-else-if="!$store.state.user.pulling_info">
           <li class="nav-item">
             <router-link class="nav-link" :to="{name:'user_account_login'}" role="button">
               登陆
@@ -68,7 +68,6 @@
 
 <script>
 //界面高亮，先取得页面 vue-router中获取uesRoute的API
-
 import  {useRoute} from 'vue-router'
 //实时计算
 import { computed } from 'vue'
@@ -83,6 +82,8 @@ export default{
 
     const store=useStore();
     //事件=>触发函数   用户退出登陆   
+
+  console.log(store.state.user); 
     const logout=()=>{
       store.dispatch("logout");//dispatch（vuex的方法）触发action
     }

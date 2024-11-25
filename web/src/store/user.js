@@ -9,17 +9,18 @@ import $ from "jquery";
 export default {
     state:{
         id: "",
-        user_name: "",
+        username: "",
         photo: "",
         token: "",
         is_login: false,
+        pulling_info: true,//拉取用户信息
     },
     getters: {
     },
     mutations: {//修改state
         updateUser(state, user) {
             state.id = user.id;
-            state.user_name = user.user_name;
+            state.username = user.username;
             state.photo = user.photo;
             state.is_login = user.is_login;
         },
@@ -28,10 +29,13 @@ export default {
         },
         logout(state) {
             state.id = "";
-            state.user_name = "";
+            state.username = "";
             state.photo = "";
             state.token = "";
             state.is_login = false;
+        },
+        updatePullingInfo(state, pulling_info) {
+            state.pulling_info = pulling_info;
         }
     },
     actions: {//修改state
@@ -42,11 +46,12 @@ export default {
                 type: "post",
                 data:
                 {
-                    user_name: data.user_name,
+                    username: data.username,
                     password: data.password,
                 },
                 success(resp) {
                     if (resp.error_message == "success") {
+                        localStorage.setItem("jwt_token", resp.token);//登陆持久化
                         context.commit("updateUserToken", resp.token);
                         data.success(resp);
                     }
@@ -72,7 +77,7 @@ export default {
                 success(resp) {
                     if (resp.error_message === "success") {
                         context.commit("updateUser", {
-                            ...resp,//解构resp，其中有id、user_name、photo等
+                            ...resp,//解构resp，其中有id、username、photo等
                             is_login: true,
                         });
                         data.success(resp);
@@ -88,6 +93,7 @@ export default {
 
         },
         logout(context) {
+            localStorage.removeItem("jwt_token");
             context.commit("logout");
         }
     },

@@ -22,15 +22,16 @@ public class UserDetailsServiceImpl implements UserDetailsService
     //UserDetails是SpringBoot的一个接口，获取用户信息
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException
     {
+        System.out.println("匹配用户");
         QueryWrapper<User> queryWrapper=new QueryWrapper<>();
-        queryWrapper.eq("user_name",username);//查询条件
+        queryWrapper.eq("username",username);//查询条件
         //backend.pojo中的user
         User user=userMapper.selectOne(queryWrapper);
         if(user==null)
         {
             throw new RuntimeException("用户不存在");
         }
-
+        System.out.println(user);
         return new UserDetailsImpl(user);
     }
 }

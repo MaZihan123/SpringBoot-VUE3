@@ -1,5 +1,7 @@
 <template>
-    <ContentField><!-- grid、居中、 -->
+    <!--正在显示信息的话，不展示，pulling之后再展示-->
+    <ContentField v-if="!$store.state.user.pulling_info">
+        <!-- grid、居中、 -->
         <div class="row justify-content-md-center">
                 <div class="col-3">
 
@@ -7,8 +9,8 @@
 
                     <!-- 表单 -->
                     <div class="mb-3">
-                        <label for="user_name" class="form-label">用户名</label>
-                        <input v-model="user_name" type="text" class="form-control" id="user_name" placeholder="牢大提醒：输入用户名">
+                        <label for="username" class="form-label">用户名</label>
+                        <input v-model="username" type="text" class="form-control" id="username" placeholder="牢大提醒：输入用户名">
                     </div>
                     <div class="mb-3">
                         <label for="password" class="form-label">密码</label>
@@ -46,14 +48,38 @@ export default
     setup()
     {
         const store=useStore();
-        let user_name=ref('');
+        let username=ref('');
         let password=ref('');
         let error_message=ref('');
+
+
+        //开始看看有没有token
+        const jwt_token=localStorage.getItem("jwt_token");
+        if(jwt_token)
+        {
+            store.commit("updateUserToken",jwt_token);//调user.js中mutation
+            store.dispatch("getinfo",{
+                success()
+                {
+                    router.push({name:"home_index"});
+                    store.commit("updatePullingInfo",false);
+                },
+                error()
+                {//pulling结束，false 
+                    store.commit("updatePullingInfo",false);
+
+                }
+            })
+        }
+        else//本地没有token
+        {   //pull结束，false
+            store.commit("updatePullingInfo",false);//调user.js中mutation
+        }
 
         const login=()=>{
             error_message.value="";
             store.dispatch("login",{
-                user_name:user_name.value,
+                username:username.value,
                 password:password.value,
                 success()
                 {
@@ -75,7 +101,7 @@ export default
             })
         }
         return{
-            user_name,
+            username,
             password,
             error_message,
             login,  

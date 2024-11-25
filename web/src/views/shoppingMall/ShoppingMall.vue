@@ -5,7 +5,7 @@
         </center>
         
         <p>
-            <img src="../../assets/images/kobe.png" alt="kobe·bryant">
+            <img src="../../assets/images/whiteKOBE.jpg" alt="kobe·bryant">
         </p>
         我是科比
         

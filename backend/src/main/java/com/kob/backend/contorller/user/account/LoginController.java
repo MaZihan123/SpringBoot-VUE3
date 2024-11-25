@@ -3,10 +3,7 @@ package com.kob.backend.contorller.user.account;
 
 import com.kob.backend.service.user.account.LoginService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 
 import java.util.Map;
@@ -21,11 +18,13 @@ public class LoginController
     @PostMapping("/user/account/token/")//网址走这个函数
     public Map<String,String >getToken(@RequestParam Map<String ,String >map)
     {
-        String username=map.get("user_name");
+
+        System.out.println("后端运行LoginController模块,然后输出map");
+        System.out.println(map);
+        String username=map.get("username");
         String password = map.get("password");
-//        //////////////////////////
-//        String phone_number = map.get("phone_number");
-//        String email = map.get("email");
+
+        System.out.println(map);
         return loginService.getToken(username,password);
     }
 }

@@ -1,12 +1,10 @@
 <template>
     <div>
-        
+        <h2>用户信息</h2>
         <ContentField>
-            <h2>用户信息</h2>
             <div>
                 <p>手机号: {{ user.phone }}</p>
                 <p>邮箱: {{ user.email }}</p>
-                
             </div>
         </ContentField>
     </div>
@@ -15,7 +13,6 @@
 <script>
 import ContentField from '@/components/ContentField.vue';
 import $ from 'jquery';
-import { reactive } from 'vue';
 import { useStore } from 'vuex';
 
 export default {
@@ -24,21 +21,21 @@ export default {
     },
     setup() {
         const store = useStore();
-        const user = reactive({
+        const user = {
             phone: '',
             email: ''
-        });
+        };
 
-        // 使用 jQuery 发起 AJAX 请求
+        // 使用 jQuery 发起 AJAX 请求http://localhost:8080/user/
         $.ajax({
-            url: "http://127.0.0.1:3000/user/",
+            url: "http://127.0.0.1:8080/user/",
             type: "GET",
             headers: {
                 Authorization: "Bearer " + store.state.user.token, // 添加用户的 token
             },
             success(resp) {
-                user.phone = resp.phone; // 响应式对象会自动触发视图更新
-                user.email = resp.email;
+                user.phone = resp.phone; // 从返回数据中提取用户手机号
+                user.email = resp.email; // 从返回数据中提取用户邮箱
                 console.log("用户信息获取成功:", resp);
             },
             error(err) {

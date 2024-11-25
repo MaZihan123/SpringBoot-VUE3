@@ -24,7 +24,7 @@ export default
       //     type:"post",
       //     data:
       //     {
-      //       user_name:"马梓涵",
+      //       username:"马梓涵",
       //       password:"123321",
       //     },
       //     success(resp)
@@ -82,7 +82,25 @@ export default
       //     }
       //   },
     //  )
-
+//     const dataToSend = {
+//     username: "马梓涵",
+//     password: "123321"
+// };
+// console.log("发送的数据：", dataToSend);
+//     $.ajax({
+//     url: "http://127.0.0.1:3000/user/account/token/",
+//     type: "POST",
+//     data: {
+//         username: "马梓涵",
+//         password: "123321"
+//     },
+//     success: function (resp) {
+//         console.log("登录成功", resp);
+//     },
+//     error: function (err) {
+//         console.log("登录失败", err);
+//     }
+// });
   }
 }
 
