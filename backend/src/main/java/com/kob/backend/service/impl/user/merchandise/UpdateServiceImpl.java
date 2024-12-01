@@ -30,6 +30,7 @@ public class UpdateServiceImpl implements UpdateService
         String mervalue=data.get("mervalue");
         String description=data.get("description");
         String merimg=data.get("merimg");
+        String mernum=data.get("mernum");
 
         Map<String,String>map=new HashMap<>();
 
@@ -50,7 +51,15 @@ public class UpdateServiceImpl implements UpdateService
 //            return map;
 //        }
 
-
+        if(mernum==null||mernum.length()==0)
+        {
+            map.put("error_message","库存不能为空");
+        }
+        if(mernum=="0")
+        {
+            map.put("error_message","库存不能为0");
+            return map;
+        }
 
 
         if(merchandise==null)
@@ -73,9 +82,16 @@ public class UpdateServiceImpl implements UpdateService
             map.put("error_message","价格不能为空");
             return map;
         }
+        //判断mervalue是否为数字
+        try {
+            Double.parseDouble(mervalue);
+        } catch (NumberFormatException e) {
+            map.put("error_message", "价格必须为数字");
+            return map;
+        }
 
         Merchandise newMerchandise = new Merchandise(
-                merchandise.getId(), mername, mervalue, description,
+                merchandise.getId(), mername, mervalue, mernum,description,
                 merchandise.getCreatetime(), new Date(),
                 merimg);
 

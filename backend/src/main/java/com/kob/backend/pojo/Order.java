@@ -12,19 +12,19 @@ import java.util.Date;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Merchandise
-{   //数据库中存在_时，pojo 用驼峰，*但是queryWrapper中用下划线*
-
+public class Order
+{
     @TableId(type = IdType.AUTO)//自增
     private Integer id;
+    private Integer userid;
+    private Integer merchandiseid;
+    private String username;
     private String mername;
-    private String mervalue;
-    private String mernum;
     private String description;
+    private Integer quantity;
+    private Integer totalprice;
+    private String mervalue;
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss",timezone = "Asia/Shanghai")
     private Date createtime;
-    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss",timezone = "Asia/Shanghai")
-    private Date modifytime;
-    private String merimg;
 
 }

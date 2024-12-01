@@ -94,6 +94,7 @@ export default{
 
     // 获取当前用户名
     let username = computed(() => store.state.user.username);
+    //let user-authority=,computed(() => store.state.user.authority);
 
   console.log(store.state.user); 
     const logout=()=>{

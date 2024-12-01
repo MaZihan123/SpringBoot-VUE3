@@ -46,6 +46,10 @@
                             <input v-model="merchandiseAdd.mervalue" class="form-control" placeholder="请输入商品金额">
                         </div>
                         <div class="mb-3">
+                                <label for="add-merchandise-description" class="form-label">*商品个数</label>
+                                <textarea v-model="merchandiseAdd.mernum" class="form-control" placeholder="请输入商品个数"></textarea>
+                        </div>
+                        <div class="mb-3">
                             <label for="add-merchandise-photo" class="form-label">商品图片网址</label>
                             <input v-model="merchandiseAdd.merimg" class="form-control" placeholder="请输入商品图片网址">
                         </div>
@@ -75,6 +79,7 @@
                                         <th>商品名称</th>
                                         <th>金额</th>
                                         <th>描述</th>
+                                        <th>商品个数</th>
                                         <th>图片网址</th>
                                         <th>管理员操作</th>
                                     </tr>
@@ -85,6 +90,7 @@
                                         <td>{{ merchandise.id }}</td>  
                                         <td>{{ merchandise.mername }}</td>
                                         <td>{{ merchandise.mervalue }}</td>
+                                        <td>{{ merchandise.mernum }}</td>
                                         <td>{{ merchandise.description }}</td>
                                         <td>{{ merchandise.merimg }}</td>
                                         <td>                                                                                                                <!--表达式！！！！冒号！！！！气死了v-bind-->
@@ -122,6 +128,18 @@
                                                                     placeholder="请输入商品金额"
                                                                 />
                                                             </div>
+                                                            <!---->
+                                                            <div class="mb-3">
+                                                                <label for="add-merchandise-value" class="form-label">*商品个数</label>
+                                                                <input
+                                                                    v-model="merchandise.mernum"
+                                                                    type="text"
+                                                                    class="form-control"
+                                                                    id="add-merchandise-value"
+                                                                    placeholder="请输入商品个数"
+                                                                />
+                                                            </div>
+                                                            <!---->
                                                             <div class="mb-3">
                                                                 <label for="add-merchandise-photo" class="form-label">商品图片网址</label>
                                                                 <input
@@ -190,6 +208,7 @@ export default {
         const merchandiseAdd=reactive({
             mername:"",
             mervalue:"",
+            mernum:"",
             merimg:"",
             description:"",
             error_msg:"",
@@ -200,7 +219,7 @@ export default {
             phone: '',
             email: '',
             mernum: 0,
-            photo: '' // 用于存储头像 URL
+            photo: ''
         });
         let merchandises = ref([]); // 商品数据
 
@@ -264,6 +283,7 @@ export default {
                 data:{
                      mername:merchandiseAdd.mername,
                      mervalue:merchandiseAdd.mervalue,
+                     mernum:merchandiseAdd.mernum,
                      description:merchandiseAdd.description,
                      merimg:merchandiseAdd.merimg,
                      error_msg:merchandiseAdd.error_msg,
@@ -280,6 +300,7 @@ export default {
                         //clear
                         merchandiseAdd.mername="";
                         merchandiseAdd.mervalue="";
+                        merchandiseAdd.mernum="";
                         merchandiseAdd.merimg="";
                         merchandiseAdd.description="";
                         merchandiseAdd.error_msg="";
@@ -341,6 +362,7 @@ export default {
                 data:{
                      mername:merchandise.mername,
                      mervalue:merchandise.mervalue,
+                     mernum:merchandise.mernum,
                      description:merchandise.description,
                      merimg:merchandise.merimg,
                      error_msg:merchandise.error_msg,

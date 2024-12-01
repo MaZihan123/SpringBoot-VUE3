@@ -31,14 +31,32 @@ public class AddServiceImpl implements AddService
         String mervalue=data.get("mervalue");
         String description=data.get("description");
         String merimg=data.get("merimg");
+        String mernum=data.get("mernum");
         System.out.println("merimg="+merimg);
         if(merimg==null||merimg.length()==0)
         {
             System.out.println("merimg为空");
-            merimg="https://img.alicdn.com/imgextra/i2/2200720004236/O1CN01Zz1Z2o1C5Z2Q6Q6Zz_!!2200720004236.jpg";
+            merimg="https://www.littleboss.com/upload/image/20160617/1466144909738081.jpg";
         }
 
         Map<String,String>map=new HashMap<>();
+        //判断mervalue是否为数字
+        try {
+            Double.parseDouble(mervalue);
+        } catch (NumberFormatException e) {
+            map.put("error_message", "价格必须为数字");
+            return map;
+        }
+
+        if(mernum==null||mernum.length()==0)
+        {
+            map.put("error_message","库存不能为空");
+        }
+        if(mernum=="0")
+        {
+            map.put("error_message","库存不能为0");
+            return map;
+        }
 
         if(description==null||description.length()==0)
         {
@@ -73,7 +91,7 @@ public class AddServiceImpl implements AddService
         System.out.println("获取数据"+map);
 
         Date now=new Date();
-        Merchandise merchandise=new Merchandise(null,mername,mervalue,description,now,now,merimg);
+        Merchandise merchandise=new Merchandise(null,mername,mervalue,null,description,now,now,merimg);
 
         merchandiseMapper.insert(merchandise);
         map.put("success_message","success");
