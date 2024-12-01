@@ -20,7 +20,7 @@ public class UserInfoController
     public Map<String,String>getInfo()
     {
 
-        System.out.println("Contronller电话和邮箱***********");
+        System.out.println("Contronller电话、邮箱、订单***********");
         Map<String, String> phoneAndEmail = getInfo.getPhoneAndEmail();
         System.out.println(phoneAndEmail);
         return phoneAndEmail;

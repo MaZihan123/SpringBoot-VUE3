@@ -4,7 +4,9 @@
     <div class ="container  content-field">
         <div class="card">
             <div class ="card-body">
-                <slot></slot>   <!--之后要填充的内容放在这里面-->
+                <slot>
+                    
+                </slot>   <!--之后要填充的内容放在这里面-->
             </div>
         </div>
     </div>

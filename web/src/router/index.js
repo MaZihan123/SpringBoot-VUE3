@@ -10,6 +10,8 @@ import User from '../views/user/UserIndex.vue'
 import UserAccountLoginView from '../views/user/account/UserAccountLoginView.vue'
 import UserAccountRegisterView from '../views/user/account/UserAccountRegisterView.vue'
 import stroe from '../store/index.js'
+import UserMerchandiseIndexView from '../views/user/Merchandise/UserMerchandiseIndexView.vue'
+import UserManageView from '../views/user/UserManageView.vue'
 
 const routes = [
   {
@@ -82,7 +84,48 @@ const routes = [
       requestAuth:false,
     }
   },
+  {
+    path:"/user/merchandise/add/",
+    name:"user_merchandise_add",
+    component:UserMerchandiseIndexView,
+    meta:{
+      requestAuth:false,
+    }
+  },
+  {
+    path:"/user/merchandise/remove/",
+    name:"user_merchandise_remove",
+    component:UserMerchandiseIndexView,
+    meta:{
+      requestAuth:false,
+    }
+  },
+  {
+    path:"/user/merchandise/update/",
+    name:"user_merchandise_update",
+    component:UserMerchandiseIndexView,
+    meta:{
+      requestAuth:false,
+    }
+  },
+  {
+    path:"/user/merchandise/getlist/",
+    name:"user_merchandise_getlist",
+    component:UserMerchandiseIndexView,
+    meta:{
+      requestAuth:false,
+    }
+  },
+  {
+    path:"/user/manage/",
+    name:"user_manage",
+    component:UserManageView,
+    meta:{
+      requestAuth:true,
+    }
+  }
   
+  ,
   {
     path:"/:catchAll(.*)",
     redirect: "/404",

@@ -25,6 +25,7 @@ export default {
             state.is_login = user.is_login;
         },
         updateUserToken(state, token) {
+            //if (user.token!=null){state.token = user.token;}
             state.token = token;
         },
         logout(state) {

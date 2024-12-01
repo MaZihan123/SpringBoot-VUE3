@@ -5,7 +5,7 @@ import com.kob.backend.pojo.Merchandise;
 import org.apache.ibatis.annotations.Mapper;
 
 @Mapper
-public interface MerchandiseMapper extends BaseMapper<Merchandise>
+public interface MerchandiseMapper extends BaseMapper<Merchandise>//继承BaseMapper，BaseMapper中有CRUD方法
 {
 
 }

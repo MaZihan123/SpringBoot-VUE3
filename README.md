@@ -56,6 +56,21 @@ ac_app和web都是在VUE中创建的项目，所以都需要安装依赖，同�
 ├── vite.config.ts             # vite 配置
 └── package.json               # package.json
 ```
+### vue3-ace-editor
+相关链接：```https://github.com/CarterLi/vue3-ace-editor```
+``` import { VAceEditor } from 'vue3-ace-editor';
+import ace from 'ace-builds';
+ace.config.set(
+    "basePath", 
+    "https://cdn.jsdelivr.net/npm/ace-builds@" + require('ace-builds').version + "/src-noconflict/")
+<VAceEditor
+    v-model:value="botadd.content"
+    @init="editorInit"
+    lang="c_cpp"
+    theme="textmate"
+    style="height: 300px" />
+```
+
 ## 四、关于后端的安装
 ### 1.安装IDEA 
 在新建项目的时候，组：com.kob 工件backend，jdk：corretto-1.8，java:8

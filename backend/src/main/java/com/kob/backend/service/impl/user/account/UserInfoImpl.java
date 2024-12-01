@@ -26,6 +26,8 @@ public class UserInfoImpl implements GetInfoService
         map.put("error_message","success");
         map.put("phone",user.getPhone());
         map.put("email",user.getEmail());
+        map.put("mernum", String.valueOf(user.getMernum()));
+        map.put("photo",user.getPhoto());
         return map;
     }
 }

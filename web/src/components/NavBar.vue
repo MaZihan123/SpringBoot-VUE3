@@ -34,7 +34,16 @@
               <li>
                 <router-link class="dropdown-item" :to="{name:'user_index'}">用户信息</router-link>
               </li>
-              <li><hr class="dropdown-divider"></li>
+
+              <!-- add a manage-->
+              <template v-if="username === '马梓涵' ">
+                <li>
+                  <router-link class="dropdown-item" :to="{name:'user_manage'}">管理</router-link>
+                </li>
+                <li><hr class="dropdown-divider"></li>
+              </template>
+              <!---->
+
               <li><a class="dropdown-item" href="#" @click="logout">退出</a></li>
               <!-- 点退出调用-logout函数调dispatch，然后调用user.js的logout，然后调用mutations的logout函数改变state
               同步的话直接调用mutations的logout函数改变state 
@@ -83,13 +92,18 @@ export default{
     const store=useStore();
     //事件=>触发函数   用户退出登陆   
 
+    // 获取当前用户名
+    let username = computed(() => store.state.user.username);
+
   console.log(store.state.user); 
     const logout=()=>{
       store.dispatch("logout");//dispatch（vuex的方法）触发action
+      
     }
 
     return {
       route_name,
+      username,
       logout
     }
   }

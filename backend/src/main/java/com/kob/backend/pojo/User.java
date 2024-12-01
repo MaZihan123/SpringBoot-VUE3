@@ -2,14 +2,11 @@ package com.kob.backend.pojo;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-
 //一个类对应db里的一张表
 public class User
 {
@@ -21,4 +18,5 @@ public class User
     private String password;
     private String email;
     private String photo;
+    private Integer mernum;
 }
