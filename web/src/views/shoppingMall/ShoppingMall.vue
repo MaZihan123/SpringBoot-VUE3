@@ -177,9 +177,11 @@ export default {
 div.error-message{
     color:red;
 }
-
-
-
+.merchandise-image {
+    width: 100px;  
+    height: 100px; 
+    object-fit: cover; 
+}
 .user-photo {
     width: 100px;
     height: 100px;
