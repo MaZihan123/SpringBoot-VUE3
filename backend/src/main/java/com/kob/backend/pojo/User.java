@@ -19,4 +19,5 @@ public class User
     private String email;
     private String photo;
     private Integer mernum;
+    private Integer userlevel;
 }

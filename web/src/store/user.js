@@ -14,6 +14,7 @@ export default {
         token: "",
         is_login: false,
         pulling_info: true,//拉取用户信息
+        userlevel:"",
     },
     getters: {
     },
@@ -23,6 +24,8 @@ export default {
             state.username = user.username;
             state.photo = user.photo;
             state.is_login = user.is_login;
+            state.userlevel = user.userlevel;
+            console.log("userlevel",user.userlevel);
         },
         updateUserToken(state, token) {
             //if (user.token!=null){state.token = user.token;}
@@ -34,6 +37,7 @@ export default {
             state.photo = "";
             state.token = "";
             state.is_login = false;
+            state.userlevel = "";
         },
         updatePullingInfo(state, pulling_info) {
             state.pulling_info = pulling_info;

@@ -16,7 +16,7 @@ public class UpdateContronller
     @PostMapping("/user/merchandise/update/")
     Map<String,String> updata(@RequestParam Map<String, String>data)
     {
-        System.out.println("***执行UpdataController***");
+        System.out.println("***执行UpdataMerchandise***");
         System.out.println("获取前端传来的数据"+data);
         return updateService.update(data);
     }

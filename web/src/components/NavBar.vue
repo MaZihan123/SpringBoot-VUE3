@@ -35,10 +35,18 @@
                 <router-link class="dropdown-item" :to="{name:'user_index'}">用户信息</router-link>
               </li>
 
-              <!-- add a manage-->
-              <template v-if="username === '马梓涵' ">
+              <!-- add a manage超级管和普通管都可以管理商品-->
+              <template v-if="userlevel === '3'||userlevel==='2'">
                 <li>
-                  <router-link class="dropdown-item" :to="{name:'user_manage'}">管理</router-link>
+                  <router-link class="dropdown-item" :to="{name:'user_manage'}">管理商品</router-link>
+                </li>
+                <li><hr class="dropdown-divider"></li>
+              </template>
+              <!---->
+               <!-- 管理用户，只有超级管可以管理用户-->
+               <template v-if="userlevel === '3'">
+                <li>
+                  <router-link class="dropdown-item" :to="{name:'user_usermanage'}">管理用户</router-link>
                 </li>
                 <li><hr class="dropdown-divider"></li>
               </template>
@@ -80,6 +88,8 @@
 import  {useRoute} from 'vue-router'
 //实时计算
 import { computed } from 'vue'
+// import {ref} from 'vue'
+// import $ from 'jquery'
 
 import {useStore} from 'vuex'
 export default{
@@ -88,23 +98,49 @@ export default{
     const route =useRoute();
     //computed函数返回route的name
     let route_name = computed(()=>route.name)
-
+    
     const store=useStore();
     //事件=>触发函数   用户退出登陆   
 
     // 获取当前用户名
     let username = computed(() => store.state.user.username);
     //let user-authority=,computed(() => store.state.user.authority);
+    let userlevel= computed(() => store.state.user.userlevel);
+
+  //console.log("userlevel:",userlevel.value);
+    // const logout=()=>{
+    //   store.dispatch("logout");//dispatch（vuex的方法）触发action
+    // } 
+    
 
   console.log(store.state.user); 
     const logout=()=>{
       store.dispatch("logout");//dispatch（vuex的方法）触发action
       
     }
+    // const userlevel = ref(null);
+    // $.ajax({
+    //   url:"http:http://127.0.0.1:3000/user/account/info/",
+    //   type:"GET",
+    //   headers:{
+    //     Authorization:"Bearer "+store.state.user.token
+    //   },
+    //   success(resp){
+    //     if(resp.error_message==="success")
+    //     { 
+    //       console.log("userlevel:",resp.userlevel);
+    //       userlevel.value=resp.userlevel;
+    //     }
+    //     else{
+    //       console.log("用户信息获取失败",resp);
+    //     }
+    //   },
+    // })
 
     return {
       route_name,
       username,
+      userlevel,
       logout
     }
   }

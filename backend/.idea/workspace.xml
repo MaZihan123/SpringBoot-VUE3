@@ -5,19 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="15599c14-9232-43b1-9df5-2fccca0675b1" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kob/backend/contorller/user/orders/OrderContronller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kob/backend/service/impl/user/orders/OrderServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kob/backend/service/user/orders/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kob/backend/contorller/user/account/GetUserListContronller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kob/backend/contorller/user/account/UpdateUserContronller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kob/backend/service/impl/user/account/GetUserListServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kob/backend/service/impl/user/account/UpdateUserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kob/backend/service/user/account/GetUserListService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kob/backend/service/user/account/UpdateUserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kob/backend/demos/web/BasicController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kob/backend/demos/web/PathVariableController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kob/backend/demos/web/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kob/backend/mapper/OrderMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kob/backend/mapper/OrderMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kob/backend/pojo/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kob/backend/pojo/Orders.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kob/backend/service/impl/user/merchandise/BuyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kob/backend/service/impl/user/merchandise/BuyServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web/src/views/order/OrderIndex.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../web/src/views/order/OrderIndex.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web/src/views/shoppingMall/ShoppingMall.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../web/src/views/shoppingMall/ShoppingMall.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web/src/views/user/UserIndex.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../web/src/views/user/UserIndex.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kob/backend/contorller/user/merchandise/UpdateContronller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kob/backend/contorller/user/merchandise/UpdateContronller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kob/backend/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kob/backend/pojo/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kob/backend/service/impl/user/account/InfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kob/backend/service/impl/user/account/InfoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kob/backend/service/impl/user/account/RegisterServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kob/backend/service/impl/user/account/RegisterServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kob/backend/service/impl/user/merchandise/UpdateServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kob/backend/service/impl/user/merchandise/UpdateServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web/src/components/NavBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../web/src/components/NavBar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../web/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web/src/store/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/../web/src/store/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web/src/views/user/UserManageView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../web/src/views/user/UserManageView.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +183,7 @@
       <workItem from="1732962575394" duration="2556000" />
       <workItem from="1733013267947" duration="20621000" />
       <workItem from="1733053050614" duration="10712000" />
-      <workItem from="1733101710874" duration="8083000" />
+      <workItem from="1733101710874" duration="19337000" />
     </task>
     <servers />
   </component>

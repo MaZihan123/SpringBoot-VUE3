@@ -12,6 +12,7 @@ import UserAccountRegisterView from '../views/user/account/UserAccountRegisterVi
 import stroe from '../store/index.js'
 import UserMerchandiseIndexView from '../views/user/Merchandise/UserMerchandiseIndexView.vue'
 import UserManageView from '../views/user/UserManageView.vue'
+import UserUserManageView from '../views/user/UserUserManagerView.vue'
 
 const routes = [
   {
@@ -120,6 +121,14 @@ const routes = [
     path:"/user/manage/",
     name:"user_manage",
     component:UserManageView,
+    meta:{
+      requestAuth:true,
+    }
+  },
+  {
+    path:"/user/usermanage/",
+    name:"user_usermanage",
+    component:UserUserManageView,
     meta:{
       requestAuth:true,
     }

@@ -82,6 +82,11 @@ public class UpdateServiceImpl implements UpdateService
             map.put("error_message","价格不能为空");
             return map;
         }
+        if(Double.parseDouble(mervalue)<0)
+        {
+            map.put("error_message","价格不能为负数");
+            return map;
+        }
         //判断mervalue是否为数字
         try {
             Double.parseDouble(mervalue);

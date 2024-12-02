@@ -34,6 +34,8 @@ public class InfoServiceImpl implements InfoService
         map.put("username",user.getUsername());
         map.put("phone",user.getPhone());
         map.put("email",user.getEmail());
+        map.put("userlevel",user.getUserlevel().toString());
+        System.out.println("this is userINOF map:"+map);
         return map;
     }
 }

@@ -78,8 +78,8 @@
                                         <th >ID</th>
                                         <th>商品名称</th>
                                         <th>金额</th>
-                                        <th>描述</th>
                                         <th>商品个数</th>
+                                        <th>描述</th>
                                         <th>图片网址</th>
                                         <th>管理员操作</th>
                                     </tr>
