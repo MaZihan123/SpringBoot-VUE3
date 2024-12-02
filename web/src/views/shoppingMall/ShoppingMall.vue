@@ -150,14 +150,16 @@ export default {
                 },
                 success(resp) {
                     console.log(resp);
+                    if(resp.error_message!="success")
+                    {
+                        console.log("购买失败，商品名:", merchandise.mername);
+                        console.log("购买数量:", merchandise.purchaseQuantity);
+                        console.error("购买失败:", resp.error_message);
+                        alert(resp.error_message);
+                        return;
+                    }
                     alert("购买成功！");
                     refresh_merchandises(); // 重新刷新商品列表
-                },
-                error(err) {
-                    console.log("购买失败，商品名:", merchandise.mername);
-                    console.log("购买数量:", merchandise.purchaseQuantity);
-                    console.error(err);
-                    alert("购买失败：" + err.responseJSON.message);
                 },
             });
         };

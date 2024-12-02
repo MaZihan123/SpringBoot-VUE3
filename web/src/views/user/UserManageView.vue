@@ -224,14 +224,13 @@ export default {
         let merchandises = ref([]); // 商品数据
 
         
-        // 使用 jQuery 发起 AJAX 请求
+        
         $.ajax({
           //url: "http://127.0.0.1:3000/user/",
             url: "http://127.0.0.1:3000/user/manage/",
             type: "GET",
             headers: {
                 Authorization: "Bearer " + store.state.user.token,
-                
             },
             success(resp) {
                 console.log("这里是token",store.state.user.token),

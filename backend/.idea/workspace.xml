@@ -5,18 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="15599c14-9232-43b1-9df5-2fccca0675b1" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kob/backend/contorller/user/merchandise/BuyController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kob/backend/mapper/OrderMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kob/backend/pojo/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kob/backend/service/impl/user/merchandise/BuyServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kob/backend/service/user/merchandise/BuyService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kob/backend/contorller/user/orders/OrderContronller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kob/backend/service/impl/user/orders/OrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kob/backend/service/user/orders/OrderService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kob/backend/pojo/Merchandise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kob/backend/pojo/Merchandise.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kob/backend/service/impl/user/merchandise/AddServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kob/backend/service/impl/user/merchandise/AddServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kob/backend/service/impl/user/merchandise/UpdateServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kob/backend/service/impl/user/merchandise/UpdateServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web/src/components/NavBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../web/src/components/NavBar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kob/backend/demos/web/BasicController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kob/backend/demos/web/PathVariableController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kob/backend/demos/web/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kob/backend/mapper/OrderMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kob/backend/mapper/OrderMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kob/backend/pojo/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kob/backend/pojo/Orders.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kob/backend/service/impl/user/merchandise/BuyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kob/backend/service/impl/user/merchandise/BuyServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web/src/views/order/OrderIndex.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../web/src/views/order/OrderIndex.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../web/src/views/shoppingMall/ShoppingMall.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../web/src/views/shoppingMall/ShoppingMall.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web/src/views/user/UserManageView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../web/src/views/user/UserManageView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web/src/views/user/UserIndex.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../web/src/views/user/UserIndex.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,11 +87,17 @@
     ]
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.kob.backend.contorller.user.orders" />
+    </key>
+  </component>
   <component name="RunAnythingCache">
     <myKeys>
       <visibility group="Gradle 任务" flag="true" />
       <visibility group="Grunt" flag="true" />
       <visibility group="Gulp" flag="true" />
+      <visibility group="HTTP Requests" flag="true" />
       <visibility group="HTTP 请求" flag="true" />
       <visibility group="Maven 目标" flag="true" />
       <visibility group="Node.js" flag="true" />
@@ -172,7 +179,8 @@
       <workItem from="1732929771451" duration="600000" />
       <workItem from="1732962575394" duration="2556000" />
       <workItem from="1733013267947" duration="20621000" />
-      <workItem from="1733053050614" duration="8826000" />
+      <workItem from="1733053050614" duration="10712000" />
+      <workItem from="1733101710874" duration="8083000" />
     </task>
     <servers />
   </component>

@@ -6,6 +6,7 @@
                 <div class="photo-container">
                     <img :src="user.photo" alt="用户头像" class="user-photo" />
                 </div>
+                
                 <div>
                     <strong>📱 手机号:</strong> {{ user.phone }}
                 </div>
